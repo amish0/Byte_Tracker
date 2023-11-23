@@ -2,9 +2,9 @@
 
 import numpy as np
 
-from .basetrack import BaseTrack, TrackState
-from .utils import matching
-from .utils.kalman_filter import KalmanFilterXYAH
+from tracker_utils.basetrack import BaseTrack, TrackState
+from tracker_utils import matching
+from BYTE_Tracker.kalman_filter import KalmanFilterXYAH
 
 class STrack(BaseTrack):
     shared_kalman = KalmanFilterXYAH()
